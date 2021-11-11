@@ -49,6 +49,7 @@ public class ForgottenPassword extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Initialize properties
+
                 Properties properties = new Properties();
                 properties.put("mail.smtp.auth","true");
                 properties.put("mail.smtp.starttls.enable","true");
