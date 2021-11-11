@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tn.esprit.health_care.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/image2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="220dp"
+        android:layout_height="520dp"
+        android:background="@drawable/shape_right_panel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlHeader" />
+
+    <LinearLayout
+        android:id="@+id/llLoginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape_login_panel"
+        app:layout_constraintTop_toBottomOf="@+id/rlHeader"
+        android:paddingTop="70dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usernameEt"
+            android:hint="@string/username"
+            android:drawableRight="@drawable/ic_user"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/emailET"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/ic_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <EditText
+            android:id="@+id/telET"
+            android:hint="Phone"
+            android:maxLength="8"
+            android:inputType="number"
+            android:drawableRight="@drawable/ic_phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:hint="Password"
+            android:drawableRight="@drawable/ic_key"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <EditText
+            android:id="@+id/passwordEt2"
+            android:hint="Confirm password"
+            android:drawableRight="@drawable/ic_key"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/bg_btn_cancel"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        app:backgroundTint="#F12B2B"
+        app:layout_constraintBottom_toBottomOf="@+id/llLoginPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView android:id="@+id/tvLogin"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintTop_toTopOf="@id/llLoginPanel"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView android:textSize="20sp"
+        android:gravity="right"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        app:layout_constraintTop_toTopOf="@id/llLoginPanel"
+        android:layout_marginRight="40dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

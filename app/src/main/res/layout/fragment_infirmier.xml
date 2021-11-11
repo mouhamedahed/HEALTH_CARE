@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="tn.esprit.health_care.InfermierFragment"
+    tools:ignore="HardcodedText">
+
+    <!-- parent FAB-->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Add"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        app:icon="@drawable/ic_add"/>
+
+    <!-- FAB for add infermier-->
+
+    <!-- text for FAB for add infermier-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="Add"
+
+        android:textAlignment="center"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@id/add_fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_inf_Tv"
+        android:text="Add infermier"
+        app:layout_constraintBottom_toBottomOf="@id/add_fab_inf"
+        app:layout_constraintEnd_toStartOf="@id/add_fab_inf"
+        app:layout_constraintTop_toTopOf="@id/add_fab_inf"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="8dp" />
+
+    <!-- FAB for add L&F-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab_LF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center_horizontal"
+
+        android:text="Add"
+        android:textAlignment="center"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@id/add_fab_inf"
+        app:layout_constraintEnd_toEndOf="@id/add_fab_inf"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/add_fab_inf"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- text for FAB for add L&F-->
+    <TextView
+        android:id="@+id/add_lf_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Statistique"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/add_fab_LF"
+        app:layout_constraintEnd_toStartOf="@id/add_fab_LF"
+        app:layout_constraintTop_toTopOf="@id/add_fab_LF" />
+
+    <TextView
+        android:id="@+id/TitreCTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Liste Des Infirmiers"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitreCTv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

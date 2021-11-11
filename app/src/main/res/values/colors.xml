@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#E91E63</color>
+    <color name="purple_500">#E91E63</color>
+    <color name="purple_700">#E91E63</color>
+    <color name="teal_200">#E91E63</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_pink">#E91E63</color>
+    <color name="color_violet">#E91E63</color>
+    <color name="color_blue">#E91E63</color>
+    <color name="color_green_light">#E91E63</color>
+    <color name="color_button">#AAAAAA</color>
+    <color name="btn_cancel">#AA0000</color>
+</resources>
